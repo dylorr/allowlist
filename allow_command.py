@@ -17,17 +17,17 @@ from hikari import api
 
 ############ MONGODB CONNECTION ############
 
-cluster = MongoClient("mongodb+srv://djo:password1234@cluster0.bhpgu.mongodb.net")
+cluster = MongoClient("mongodb+srv://[username]:[password]@cluster0.bhpgu.mongodb.net")
 print(cluster)
-db = cluster['hunter']
-collection = db['hunter']
+db = cluster[' ']
+collection = db[' ']
 
 ############ CONSTANTS TO UPDATE ############
 
-server_id = 856981718623059989
-channel_id = 942130397964288101
-role_id = 942097802857701376
-bot_token = 'OTQxOTA1MjkxMTUzNDA4MDUw.YgcvqQ.lEDRqdJ2EUPJzMt5xsMG4C5ND7k'
+server_id = 
+channel_id = 
+role_id = 
+bot_token = '[token]'
 
 ############ DISCORD SETUP - COMMANDS ############
 
@@ -58,7 +58,6 @@ async def on_error(event: lightbulb.CommandErrorEvent) -> None:
     else:
         raise exception
         
-
 #restrict command to a specific channel by channel id
 @lightbulb.Check
 def channel_only(ctx):
